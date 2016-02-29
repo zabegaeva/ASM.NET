@@ -1,0 +1,19 @@
+﻿@using System.ServiceModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя страница</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+        <li>@Html.ActionLink("Обо мне","About","Home")</li>
+        <li>@Html.ActionLink("Контакты", "ShowContact", "Home")</li>
+        <li>@Html.ActionLink("Мои фотографии", "Index", "Foto")</li>
+    </ul>
+</div>
+    @RenderBody()
+</body>
+</html>
